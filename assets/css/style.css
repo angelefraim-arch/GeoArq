@@ -4,7 +4,8 @@ html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
 
 :root{
-  --ink:#12202B;
+# Fondo de la pagina principal
+  --ink:#FEFAE0;
   --paper:#F3EFE4;
   --brass:#BE9257;
   --brass-dim:#8C6C3F;
