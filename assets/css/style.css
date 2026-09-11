@@ -7,11 +7,11 @@ html{scroll-behavior:smooth}
 # Fondo de la pagina principal
   --ink:#FEFAE0;
   --paper:#283618;
-  --brass:#BE9257;
+  --brass:#283618;
   --brass-dim:#8C6C3F;
   --line:rgba(243,239,228,.14);
-  --muted:#93A5AD;
-  --text:#F3EFE4;
+  --muted:#283618;
+  --text:#283618;
 }
 
 body{
