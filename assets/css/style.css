@@ -1,26 +1,41 @@
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');}
 
 :root{
 # Fondo de la pagina principal
+  :root{
   --ink:#FEFAE0;
-  --paper:#283618;
-  --brass:#283618;
-  --brass-dim:#283618;
-  --line:rgba(243,239,228,.14);
-  --muted:#283618;
+  --paper:#FEFAE0;
+
+  --olive:#606C38;
+  --green:#283618;
+
+  --gold:#DDA15E;
+  --orange:#BC6C25;
+
+  --line:rgba(40,54,24,.14);
+
+  --muted:#606C38;
   --text:#283618;
+}
 }
 
 body{
-  margin:0;background:var(--ink);color:var(--text);
-  font-family:'Work Sans',Arial,Helvetica,sans-serif;
+  body{
+  margin:0;
+  background:var(--ink);
+  color:var(--text);
+
+  font-family:'Montserrat',Arial,Helvetica,sans-serif;
+
   background-image:
     linear-gradient(var(--line) 1px, transparent 1px),
     linear-gradient(90deg, var(--line) 1px, transparent 1px);
+
   background-size:34px 34px;
+
 }
 
 h1,.hero-title,.foot-brand{font-family:'Fraunces',Georgia,serif;font-weight:500}
