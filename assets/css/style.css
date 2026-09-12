@@ -24,6 +24,7 @@ html{
 
   --black:#2D2926;
   --orange:#BC6C25;
+  --gold:#DDA15E;
 
   --line:rgba(40,54,24,.14);
 
@@ -522,4 +523,34 @@ footer{
   footer{
     padding:40px 6vw 26px;
   }
+}
+
+/* =========================
+   BOTONES DEL HERO
+========================= */
+
+.hero-actions .btn {
+  background: var(--orange);
+  color: var(--green);
+  border: 1px solid var(--orange);
+
+  padding: 12px 18px;
+  border-radius: 4px;
+
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: 
+    background .2s ease,
+    border-color .2s ease,
+    color .2s ease,
+    transform .2s ease;
+}
+
+.hero-actions .btn:hover {
+  background: var(--green);
+  color: var(--ink);
+  border-color: var(--green);
+  transform: translateY(-2px);
 }
