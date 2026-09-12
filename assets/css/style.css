@@ -526,29 +526,43 @@ footer{
 }
 
 /* =========================
-   BOTONES DEL HERO
+   BOTONES HERO - TODOS CON FONDO
 ========================= */
 
-.hero-actions .btn {
-  background: var(--orange);
-  color: var(--green);
-  border: 1px solid var(--orange);
-
-  padding: 12px 18px;
-  border-radius: 4px;
-
-  font-size: 12px;
-  font-weight: 500;
-  text-decoration: none;
-
-  transition: 
-    background .2s ease,
-    border-color .2s ease,
-    color .2s ease,
-    transform .2s ease;
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 38px;
 }
 
-.hero-actions .btn:hover {
+.hero-actions .btn,
+.hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--orange);
+  color: var(--green);
+
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+
+  padding: 12px 18px;
+
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: all .2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.hero-actions .btn:hover,
+.hero-actions a:hover {
   background: var(--green);
   color: var(--ink);
   border-color: var(--green);
