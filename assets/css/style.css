@@ -15,21 +15,21 @@ html{
    PALETA DE COLORES
 ========================= */
 
-:root{
-  --ink:#FEFAE0;
-  --paper:#FEFAE0;
+:root{ 
+  --ink:#FEFAE0; 
+  --paper:#FEFAE0; 
 
-  --olive:#606C38;
-  --green:#283618;
+  --olive:#606C38; 
+  --green:#283618; 
 
-  --black:#2D2926;
+  --black:#2D2926; 
   --orange:#BC6C25;
   --gold:#DDA15E;
 
-  --line:rgba(40,54,24,.14);
+  --line:rgba(40,54,24,.14); 
 
-  --muted:#606C38;
-  --text:#283618;
+  --muted:#606C38; 
+  --text:#283618; 
 }
 
 /* =========================
@@ -525,19 +525,36 @@ footer{
   }
 }
 
-/* =========================
-   BOTONES HERO - TODOS CON FONDO
-========================= */
+/* =========================================
+   BOTONES - ESTILO GEOARQ
+========================================= */
 
-.hero-actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 38px;
+/* Botones de la barra superior */
+.actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--orange);
+  color: var(--green);
+
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+
+  padding: 9px 14px;
+
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: all .2s ease;
 }
 
-.hero-actions .btn,
-.hero-actions a {
+/* Botones principales del Hero */
+.hero-actions .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -561,10 +578,11 @@ footer{
 }
 
 /* Efecto al pasar el mouse */
-.hero-actions .btn:hover,
-.hero-actions a:hover {
+.actions .btn:hover,
+.hero-actions .btn:hover {
   background: var(--green);
   color: var(--ink);
   border-color: var(--green);
+
   transform: translateY(-2px);
 }
